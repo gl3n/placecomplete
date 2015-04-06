@@ -163,6 +163,7 @@ Plugin.prototype.init = function() {
                         // for each autocomplete list item. "id" is
                         // already defined on the apr object
                         apr["text"] = apr["description"];
+                        apr["id"] = apr["place_id"];
                         return apr;
                     });
                     query.callback({results: results});
